@@ -1,0 +1,6 @@
+#!/bin/bash
+
+touch /data/teamspeak/ts3server.sqlitedb
+ln -nfs /data/teamspeak/ts3server.sqlitedb /teamspeak3-server_linux-amd64/ts3server.sqlitedb
+
+exec /teamspeak3-server_linux-amd64/ts3server_minimal_runscript.sh $@
